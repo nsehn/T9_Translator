@@ -1,6 +1,6 @@
 def possible_words(numbers)
 
-	h = {"1" => [" "], "2"  => ["a", "b", "c"], "3"  => ["d", "e", "f"], "4"  => ["g", "h", "i"], "5"  => ["j", "k", "l"], "6"  => ["m", "n", "o"], "7"  => ["p", "q", "r", "s"], "8"  => ["t", "u", "v"], "9"  => ["w", "x", "y", "z"], "0" => [" "]}
+	h = {"1" => [" "], "2"  => ["a", "b", "c"], "3"  => ["d", "e", "f"], "4"  => ["g", "h", "i"], "5"  => ["j", "k", "l"], "6"  => ["m", "n", "o"], "7"  => ["p", "q", "r", "s"], "8"  => ["t", "u", "v"], "9"  => ["w", "x", "y", "z"], "0" => [" "], " " => [" "]}
 
 	numerical_array = numbers.split(//) #This will split the string into an array of strings, which in this case would be each number
 	combo_array = []
@@ -32,5 +32,5 @@ def word_check(word)
 	return false
 end
 
-numerical_word = "968"
+numerical_word = "7625"
 print possible_words(numerical_word)
